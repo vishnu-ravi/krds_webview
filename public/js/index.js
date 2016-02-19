@@ -17,7 +17,7 @@ document.getElementById("btn_submit").addEventListener("click", function()
             protocol        =   protocol.options[protocol.selectedIndex].value;
             url             =   protocol + url;
         }
-        console.log(url);
+
         var regex   =   new RegExp("^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$");
 
         if( ! regex.test(url))
@@ -30,7 +30,6 @@ document.getElementById("btn_submit").addEventListener("click", function()
     }
     catch(e)
     {
-        console.log(e.msg);
         document.getElementById("error").innerHTML	=	e.msg;
         document.getElementById("error").style.display	=	'block';
 
