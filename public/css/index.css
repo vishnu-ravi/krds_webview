@@ -30,7 +30,7 @@ body {
     margin-bottom: 30px;
 }
 .inputGroup .protocol {
-    width: 25%;
+    width: 20%;
     border: 1px solid #B9B9B9;
     box-sizing: border-box;
     padding: 12px;
@@ -45,7 +45,7 @@ body {
     cursor: pointer;
 }
 .inputGroup .input {
-    width: 50%;
+    width: 55%;
 }
 .input {
     border: 1px solid #B9B9B9;
