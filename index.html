@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>KRDS Webview</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+        <link href="/assets/css/index.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="webviewForm">
+				<h1>KRDS Webview Tool</h1>
+				<div class="inputGroup">
+                    <select>
+                        <option value="https://">https://</option>
+                        <option value="http://">http://</option>
+                    </select>
+					<input id="url" class="input" type="text" placeholder="Enter the Url" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$"/>
+					<input id="btn_submit" class="btn" type="button" value="Go"/>
+				</div>
+			</div>
+			<p id="error" class="error" style="display:none;"></p>
+		</div>
+		<div id="loader" class="loader">
+			<img src="/assets/img/loader.gif"/>
+		</div>
+		<script src="/assets/js/index.js"></script>
+	</body>
+</html>
