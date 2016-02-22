@@ -9,7 +9,10 @@ app.set('view engine', 'hbs');
 
 app.route('/').get(function (req, res)
 {
-    res.render('index');
+    var is_ios  =   req.param('is_ios');
+
+    var data    =   {javascript: is_ios == "1" ? 'ios': 'index'};
+    res.render('index', data);
 })
 
 var port    =   process.env.PORT || 3000;
